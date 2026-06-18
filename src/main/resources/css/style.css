@@ -1,0 +1,177 @@
+.root {
+    -fx-font-family: "Segoe UI", "Inter", system-ui, sans-serif;
+    -fx-background-color: #0f0f1a;
+}
+
+.sidebar {
+    -fx-background-color: #16162a;
+    -fx-pref-width: 220px;
+    -fx-padding: 20 0 20 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 15, 0, 2, 4);
+    -fx-border-color: transparent #2a2a44 transparent transparent;
+    -fx-border-width: 1;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #a8a8c0;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 20;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+    -fx-pref-width: Infinity;
+    -fx-max-width: Infinity;
+    -fx-transition: all 0.2s ease;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(100, 100, 255, 0.12);
+    -fx-text-fill: #ffffff;
+    -fx-scale-x: 1.02;
+}
+
+.sidebar-button:pressed {
+    -fx-background-color: rgba(100, 100, 255, 0.25);
+    -fx-scale-x: 0.98;
+}
+
+.sidebar-button.selected {
+    -fx-background-color: #5a5ad6;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-effect: dropshadow(gaussian, rgba(90, 90, 214, 0.4), 8, 0, 0, 2);
+}
+
+.content-area {
+    -fx-background-color: #0f0f1a;
+    -fx-padding: 24;
+    -fx-background-radius: 0;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #1a1a2e;
+    -fx-background-insets: 0;
+    -fx-padding: 6;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+.list-cell {
+    -fx-text-fill: #e0e0ee;
+    -fx-background-color: transparent;
+    -fx-padding: 12 16;
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+}
+
+.list-cell:odd {
+    -fx-background-color: #1e1e36;
+}
+
+.list-cell:hover {
+    -fx-background-color: #2a2a50;
+    -fx-scale-x: 1.01;
+    -fx-transition: all 0.15s;
+}
+
+.list-cell:selected {
+    -fx-background-color: #5a5ad6;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(90,90,214,0.4), 8, 0, 0, 1);
+}
+
+.label-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-letter-spacing: -0.5px;
+}
+
+.label-subtitle {
+    -fx-text-fill: #9a9ab8;
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+}
+
+.button-primary {
+    -fx-background-color: #5a5ad6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 10 22;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(90,90,214,0.3), 8, 0, 0, 2);
+    -fx-transition: all 0.2s ease;
+}
+
+.button-primary:hover {
+    -fx-background-color: #6e6ef0;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.button-primary:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.button-danger {
+    -fx-background-color: #d65b5b;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 10 22;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(214,91,91,0.3), 8, 0, 0, 2);
+    -fx-transition: all 0.2s ease;
+}
+
+.button-danger:hover {
+    -fx-background-color: #f06d6d;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.button-danger:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.slider .track {
+    -fx-background-color: #2a2a4a;
+    -fx-background-radius: 10;
+    -fx-pref-height: 6;
+}
+
+.slider .thumb {
+    -fx-background-color: #6e6ef0;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 16;
+    -fx-pref-height: 16;
+    -fx-effect: dropshadow(gaussian, rgba(110,110,240,0.5), 8, 0, 0, 2);
+}
+
+.slider .thumb:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #3a3a5a;
+    -fx-background-radius: 8;
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #5a5a8a;
+}
